@@ -1,0 +1,26 @@
+{
+  "name": "openworld-blocks",
+  "version": "0.1.0",
+  "description": "An open-source voxel sandbox that runs in your browser.",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "deploy": "npm run build && gh-pages -d dist"
+  },
+  "dependencies": {
+    "simplex-noise": "^4.0.3",
+    "three": "^0.170.0"
+  },
+  "devDependencies": {
+    "@types/three": "^0.170.0",
+    "gh-pages": "^6.2.0",
+    "typescript": "^5.6.3",
+    "vite": "^6.0.0",
+    "vitest": "^2.1.8"
+  }
+}
